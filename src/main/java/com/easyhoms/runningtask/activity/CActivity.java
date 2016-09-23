@@ -88,7 +88,6 @@ public class CActivity extends BaseActivity {
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 result.setText(getTask());
             }
         });
@@ -103,5 +102,11 @@ public class CActivity extends BaseActivity {
 
 
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        result.setText(getTask());
     }
 }

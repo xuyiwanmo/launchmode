@@ -104,4 +104,10 @@ public class BActivity extends BaseActivity {
 
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        result.setText(getTask());
+    }
 }
